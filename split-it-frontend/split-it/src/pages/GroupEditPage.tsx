@@ -1,18 +1,30 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Importing components
 import { GroupForm } from "@/components/GroupForm";
+import Navbar from "@/components/Navbar";
+import { GroupTabs } from "@/components/GroupTabs";
+import { ShareButton } from "@/components/ShareButton";
+import { SaveGroupLocally } from "@/components/SaveRecentGroup";
+
+// Importing services
 import {
   getGroup,
   getGroupExpensesParticipants,
   updateGroup,
 } from "@/services/Service";
+
+// Importing schema
 import { groupFormSchema } from "@/lib/schemas";
+
+// Importing React utilities
 import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
+
+// Importing Link component from react-router-dom
 import { Link } from "react-router-dom";
-import { GroupTabs } from "@/components/GroupTabs";
-import { ShareButton } from "@/components/ShareButton";
-import { SaveGroupLocally } from "@/components/SaveRecentGroup";
+
+// Importing a component for 404 page
 const notFound = () => <h1>404 - Not Found</h1>;
+
 let name: string;
 interface GroupEditPageProps {
   params: {

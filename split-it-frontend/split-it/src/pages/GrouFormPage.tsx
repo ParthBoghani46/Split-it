@@ -1,9 +1,18 @@
+// Importing components
 import { GroupForm } from "@/components/GroupForm";
-import { createGroup } from "@/services/Service";
-import { groupFormSchema } from "@/lib/schemas";
-import { z } from "zod";
-import { saveRecentGroup } from "@/lib/RecentGroupsHelpers";
 import Navbar from "@/components/Navbar";
+
+// Importing services
+import { createGroup } from "@/services/Service";
+
+// Importing schema
+import { groupFormSchema } from "@/lib/schemas";
+
+// Importing Zod
+import { z } from "zod";
+
+// Importing helper function
+import { saveRecentGroup } from "@/lib/RecentGroupsHelpers";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const recentGroupsSchema = z.array(

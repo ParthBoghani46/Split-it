@@ -1,16 +1,26 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
-import { ActiveUserBalance } from "./ActiveUserBalence";
-import CategoryIcon from "@/assets/CategoryIcon";
+
+// Importing components
+import { ActiveUserBalance } from "@/components/ActiveUserBalence";
+
+// Importing UI components
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/ui/search-bar";
+
+// Importing services
 import { getGroupExpenses } from "@/services/Service";
+
+// Importing utilities
 import { cn, formatCurrency, formatExpenseDate } from "@/lib/utils";
-// import { Expense, Participant } from "@prisma/client";
+
+// Importing external dependencies
 import dayjs, { type Dayjs } from "dayjs";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Fragment, useEffect, useState } from "react";
+
+// Importing assets
+import CategoryIcon from "@/assets/CategoryIcon";
 
 interface Expense {
   id: string;

@@ -1,3 +1,4 @@
+// Importing utility function for currency formatting
 import { formatCurrency } from "@/lib/utils";
 
 type Props = {

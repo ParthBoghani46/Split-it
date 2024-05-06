@@ -1,3 +1,4 @@
+// Importing utilities from the lib folder
 import { cn, formatCurrency } from "@/lib/utils";
 
 type Props = {

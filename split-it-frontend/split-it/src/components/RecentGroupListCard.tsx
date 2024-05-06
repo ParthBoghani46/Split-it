@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
-import { RecentGroupsState } from "../pages/RecentGroupListPage";
+
+// Importing types and functions related to RecentGroups
+import { RecentGroupsState } from "@/pages/RecentGroupListPage";
 import {
   RecentGroup,
   archiveGroup,
@@ -13,6 +14,8 @@ import {
   unarchiveGroup,
   unstarGroup,
 } from "@/lib/RecentGroupsHelpers";
+
+// Importing UI components
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -23,13 +26,17 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import { ToastAction } from "@/components/ui/toast";
 import { useToast } from "@/components/ui/use-toast";
+
+// Importing icons
 import { StarFilledIcon } from "@radix-ui/react-icons";
 import { Calendar, MoreHorizontal, Star, Users } from "lucide-react";
+
+// Importing React utilities
 import { Link } from "react-router-dom";
-
 import { SetStateAction, useEffect, useState } from "react";
-import { getGroup } from "@/services/Service";
 
+// Importing services
+import { getGroup } from "@/services/Service";
 export function RecentGroupListCard({
   group,
   state,

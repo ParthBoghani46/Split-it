@@ -1,17 +1,29 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Importing components
 import { ExpenseForm } from "@/components/ExpenseForm";
+import Navbar from "@/components/Navbar";
+import { GroupTabs } from "@/components/GroupTabs";
+
+// Importing services
 import {
   deleteExpense,
   getExpense,
   getGroup,
   updateExpense,
 } from "@/services/Service";
+
+// Importing schema
 import { expenseFormSchema } from "@/lib/schemas";
+
+// Importing React utilities
 import { Suspense, useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
+
+// Importing Link component from react-router-dom
 import { Link } from "react-router-dom";
-import { GroupTabs } from "@/components/GroupTabs";
+
+// Importing a component for 404 page
 const notFound = () => <h1>404 - Not Found</h1>;
+
 let name: string;
 
 function EditExpensePage({

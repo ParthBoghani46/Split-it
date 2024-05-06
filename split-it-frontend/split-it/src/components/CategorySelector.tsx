@@ -1,5 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+
+// Importing assets
 import CategoryIcon from "@/assets/CategoryIcon";
+
+// Importing UI components from the components/ui folder
 import { Button, ButtonProps } from "@/components/ui/button";
 import {
   Command,
@@ -14,8 +18,14 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { useMediaQuery } from "../lib/hooks";
+
+// Importing hooks from the lib folder
+import { useMediaQuery } from "@/lib/hooks";
+
+// Importing React utilities
 import { forwardRef, useEffect, useState, useRef } from "react";
+
+// Importing additional libraries
 import { CommandList } from "cmdk";
 import { ChevronDown } from "lucide-react";
 interface Category {

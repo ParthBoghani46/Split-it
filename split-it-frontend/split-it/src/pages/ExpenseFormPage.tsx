@@ -1,8 +1,15 @@
+// Importing React utilities
 import { useEffect, useState } from "react";
+
+// Importing components
 import { ExpenseForm } from "@/components/ExpenseForm";
-import { createExpense, getGroup } from "@/services/Service";
-import { expenseFormSchema } from "@/lib/schemas";
 import Navbar from "@/components/Navbar";
+
+// Importing services
+import { createExpense, getGroup } from "@/services/Service";
+
+// Importing schema
+import { expenseFormSchema } from "@/lib/schemas";
 
 interface Props {
   groupId: string;

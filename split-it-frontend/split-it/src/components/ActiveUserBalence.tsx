@@ -1,4 +1,7 @@
+// Importing components
 import { Money } from "@/components/Money";
+
+// Importing functions and hooks from the lib folder
 import { getBalances } from "@/lib/balances";
 import { useActiveUser } from "@/lib/hooks";
 

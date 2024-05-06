@@ -1,7 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Importing React utilities
 import { useEffect, useState } from "react";
+
+// Importing services
 import { getGroup, getGroupExpenses } from "@/services/Service";
-import { ExpenseList } from "./ExpenseList";
+
+// Importing components
+import { ExpenseList } from "@/components/ExpenseList";
 
 const notFound = () => <h1>404 - Not Found</h1>;
 const Expenses = ({ groupId }: { groupId: string }) => {

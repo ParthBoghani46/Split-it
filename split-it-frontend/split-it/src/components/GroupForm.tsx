@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Importing UI components
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -30,8 +31,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
+// Importing services
 import { getGroup } from "@/services/Service";
+
+// Importing schemas
 import { GroupFormValues, groupFormSchema } from "@/lib/schemas";
+
+// Importing external dependencies
 import { zodResolver } from "@hookform/resolvers/zod";
 import { BadgePlus, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";

@@ -3,7 +3,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+// Importing components
 import CategorySelector from "@/components/CategorySelector";
+import { DeletePopup } from "@/components/DeletePopup";
+
+// Importing UI components
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -35,21 +39,26 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+
+// Importing services
 import { getExpense, getGroup } from "@/services/Service";
+
+// Importing schemas and utilities
 import {
   ExpenseFormValues,
   SplittingOptions,
   expenseFormSchema,
 } from "@/lib/schemas";
 import { cn } from "@/lib/utils";
+
+// Importing external dependencies
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Save } from "lucide-react";
 import { Link } from "react-router-dom";
 import useQueryParams from "./useQueryParams";
 import { useForm } from "react-hook-form";
 import { match } from "ts-pattern";
-import { DeletePopup } from "./DeletePopup";
-import { Textarea } from "./ui/textarea";
 import { useEffect, useState } from "react";
 
 enum SplitMode {

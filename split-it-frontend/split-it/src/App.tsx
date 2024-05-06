@@ -1,18 +1,21 @@
-import "./App.css";
+// Importing pages related to group management
+import GroupFormPage from "@/pages/GrouFormPage";
+import GroupExpensesPage from "@/pages/GroupExpensesPage";
+import ExpenseFormPage from "@/pages/ExpenseFormPage";
+import GroupPage from "@/pages/GroupPage";
+import GroupBalancesPage from "@/pages/GroupBalancesPage";
+import GroupStatePage from "@/pages/GroupStatePage";
+import GroupEditPage from "@/pages/GroupEditPage";
+import GroupExpenseEditPage from "@/pages/GroupExpenseEditPage";
 
-import GroupFormPage from "./pages/GrouFormpage";
-import HomePage from "./pages/HomePage";
+// Importing pages related to navigation
+import HomePage from "@/pages/HomePage";
+import TestPage from "@/pages/TestPage";
+import { RecentGroupListPage } from "@/pages/RecentGroupListPage";
+
+// Importing necessary components from react-router-dom
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import TestPage from "./pages/TestPage";
-import GroupExpensesPage from "./pages/GroupExpensesPage";
-import ExpenseFormPage from "./pages/ExpenseFormPage";
-import { RecentGroupListPage } from "./pages/RecentGroupListPage";
-import GroupPage from "./pages/GroupPage";
-import GroupBalancesPage from "./pages/GroupBalancesPage";
-import GroupStatePage from "./pages/GroupStatePage";
-import GroupEditPage from "./pages/GroupEditPage";
-import GroupExpenseEditPage from "./pages/GroupExpenseEditPage";
 
 function App() {
   return (

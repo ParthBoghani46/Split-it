@@ -1,5 +1,10 @@
+// Importing UI component
 import { Button } from "@/components/ui/button";
+
+// Importing icon
 import { Share } from "lucide-react";
+
+// Importing React utilities
 import { useEffect, useState } from "react";
 
 interface Props {

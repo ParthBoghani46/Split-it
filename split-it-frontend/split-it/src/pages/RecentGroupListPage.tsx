@@ -1,3 +1,4 @@
+// Importing components related to RecentGroups
 import {
   RecentGroups,
   getArchivedGroups,
@@ -5,15 +6,24 @@ import {
   getRecentGroups,
   getStarredGroups,
 } from "@/lib/RecentGroupsHelpers";
-
-import { Button } from "@/components/ui/button";
-import { getGroups } from "@/services/Service";
-import { Loader2 } from "lucide-react";
-import { Link } from "react-router-dom";
-import { PropsWithChildren, SetStateAction, useEffect, useState } from "react";
 import { RecentGroupListCard } from "../components/RecentGroupListCard";
-import Navbar from "../components/Navbar";
 import { AddGroupByUrlButton } from "@/components/AddGroupByUrlButton";
+
+// Importing UI components
+import { Button } from "@/components/ui/button";
+import { Loader2 } from "lucide-react";
+
+// Importing services
+import { getGroups } from "@/services/Service";
+
+// Importing React utilities
+import { PropsWithChildren, SetStateAction, useEffect, useState } from "react";
+
+// Importing Navbar component
+import Navbar from "../components/Navbar";
+
+// Importing Link component from react-router-dom
+import { Link } from "react-router-dom";
 
 export type RecentGroupsState =
   | { status: "pending" }

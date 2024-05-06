@@ -1,6 +1,13 @@
+// Importing services
 import { getGroup, getGroupExpenses } from "@/services/Service";
+
+// Importing functions related to totals
 import { getTotalActiveUserShare } from "@/lib/totals";
+
+// Importing utility function for currency formatting
 import { formatCurrency } from "@/lib/utils";
+
+// Importing React utilities
 import { useEffect, useState } from "react";
 
 type Props = {

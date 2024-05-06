@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Importing components
 import { Totals } from "@/components/Totals";
 import {
   Card,
@@ -7,14 +8,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { getGroup, getGroupExpenses } from "@/services/Service";
-import { getTotalGroupSpending } from "@/lib/totals";
-import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
-import { Link } from "react-router-dom";
 import { GroupTabs } from "@/components/GroupTabs";
 import { ShareButton } from "@/components/ShareButton";
 import { SaveGroupLocally } from "@/components/SaveRecentGroup";
+
+// Importing services
+import { getGroup, getGroupExpenses } from "@/services/Service";
+
+// Importing functions related to totals
+import { getTotalGroupSpending } from "@/lib/totals";
+
+// Importing React utilities
+import { useEffect, useState } from "react";
+
+// Importing Link component from react-router-dom
+import { Link } from "react-router-dom";
+
 interface GroupStatePageProps {
   groupId: string;
 }

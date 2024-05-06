@@ -1,4 +1,7 @@
+// Importing components from lucide-react package
 import { SunMoon } from "lucide-react";
+
+// Importing React utilities
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 

@@ -1,3 +1,4 @@
+// Importing icons from lucide-react
 import {
   BarChartHorizontalBig,
   CircleDollarSign,
@@ -6,7 +7,11 @@ import {
   ScrollText,
   Users,
 } from "lucide-react";
+
+// Importing Navbar component
 import Navbar from "../components/Navbar";
+
+// Importing Link component from react-router-dom
 import { Link } from "react-router-dom";
 
 export default function HomePage() {

@@ -1,8 +1,12 @@
-"use client";
+// Importing components
 import { TotalsGroupSpending } from "./TotalsGroupSpending";
 import { TotalsYourShare } from "./TotalsYourShare";
 import { TotalsYourSpendings } from "./TotalsYourSpending";
+
+// Importing services
 import { getGroup, getGroupExpenses } from "@/services/Service";
+
+// Importing hooks
 import { useActiveUser } from "@/lib/hooks";
 
 export function Totals({

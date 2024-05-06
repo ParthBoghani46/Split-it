@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
+// Importing Tabs components from the ui folder
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 type Props = {

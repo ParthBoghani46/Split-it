@@ -1,16 +1,30 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
+// Importing components
 import { ActiveUserBalance } from "@/components/ActiveUserBalence";
 import CategoryIcon from "@/assets/CategoryIcon";
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/ui/search-bar";
+
+// Importing services
 import { getCategories, getGroup, getGroupExpenses } from "@/services/Service";
+
+// Importing utilities
 import { cn, formatCurrency, formatExpenseDate } from "@/lib/utils";
+
+// Importing icons
 import { ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
+
+// Importing React utilities
 import { Fragment, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+// Importing additional functions
 import { getTotalGroupSpending } from "@/lib/totals";
+
+// Importing chart components
 import { PieChart, Pie, Cell } from "recharts";
+
+// Importing a component for 404 page
 const notFound = () => <h1>404 - Not Found</h1>;
 
 interface Expense {

@@ -1,7 +1,10 @@
-"use client";
-
+// Importing icons from lucide-react package
 import { Trash2 } from "lucide-react";
-import { Button } from "./ui/button";
+
+// Importing Button component from local UI folder
+import { Button } from "@/components/ui/button";
+
+// Importing Dialog components from local UI folder
 import {
   Dialog,
   DialogClose,
@@ -10,7 +13,7 @@ import {
   DialogFooter,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog";
+} from "@/components/ui/dialog";
 
 export function DeletePopup({ onDelete }: { onDelete: () => Promise<void> }) {
   return (

@@ -2,6 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
+// Importing UI components
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,17 +12,34 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+
+// Importing icon
 import { Plus } from "lucide-react";
-import { Link } from "react-router-dom";
+
+// Importing React utilities
 import { Suspense, useEffect, useState } from "react";
+
+// Importing components
 import Expenses from "@/components/Expenses";
-import { getGroup } from "@/services/Service";
 import Navbar from "@/components/Navbar";
 import { GroupTabs } from "@/components/GroupTabs";
+
+// Importing services
+import { getGroup } from "@/services/Service";
+
+// Importing components for sharing and saving group
 import { ShareButton } from "@/components/ShareButton";
 import { SaveGroupLocally } from "@/components/SaveRecentGroup";
+
+// Importing Link component from react-router-dom
+import { Link } from "react-router-dom";
+
+// Importing a component for 404 page
 const notFound = () => <h1>404 - Not Found</h1>;
+
+// Exporting revalidation time
 export const revalidate = 3600;
+
 let name: string;
 
 interface Group {

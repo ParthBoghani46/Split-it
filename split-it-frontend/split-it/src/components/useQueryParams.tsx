@@ -1,3 +1,4 @@
+// Importing React utilities
 import { useEffect, useState } from "react";
 
 function useQueryParams() {

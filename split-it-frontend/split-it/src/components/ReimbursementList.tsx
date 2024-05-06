@@ -1,7 +1,13 @@
+// Importing UI component
 import { Button } from "@/components/ui/button";
+
+// Importing Reimbursement type from balances module
 import { Reimbursement } from "@/lib/balances";
+
+// Importing utility function from utils module
 import { formatCurrency } from "@/lib/utils";
 
+// Importing Link component from react-router-dom
 import { Link } from "react-router-dom";
 
 interface Participant {

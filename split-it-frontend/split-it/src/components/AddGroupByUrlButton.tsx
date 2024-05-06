@@ -1,5 +1,11 @@
-import { getGroupInfoAction } from "./AddGroupByUrlButtonActions";
+// Importing functions and hooks from the lib folder
 import { saveRecentGroup } from "@/lib/RecentGroupsHelpers";
+import { useMediaQuery } from "@/lib/hooks";
+
+// Importing actions from the components folder
+import { getGroupInfoAction } from "@/components/AddGroupByUrlButtonActions";
+
+// Importing UI components from the components/ui folder
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -7,10 +13,12 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { useMediaQuery } from "@/lib/hooks";
-import { Loader2, Plus } from "lucide-react";
-import { useState } from "react";
 
+// Importing icons from lucide-react package
+import { Loader2, Plus } from "lucide-react";
+
+// Importing useState hook from React
+import { useState } from "react";
 type Props = {
   reload: () => void;
 };

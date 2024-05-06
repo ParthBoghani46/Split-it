@@ -1,6 +1,10 @@
-"use client";
+// Importing UI components from the components/ui folder
 import { Button } from "@/components/ui/button";
+
+// Importing icons from lucide-react package
 import { Check, Copy } from "lucide-react";
+
+// Importing React utilities
 import { useEffect, useState } from "react";
 
 type Props = { text: string };

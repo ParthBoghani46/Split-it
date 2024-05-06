@@ -1,3 +1,4 @@
+// Importing components
 import { CopyButton } from "@/components/CopyButton";
 import { ShareUrlButton } from "@/components/ShareUrlButton";
 import { Button } from "@/components/ui/button";
@@ -7,13 +8,18 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+
+// Importing hooks
 import { useBaseUrl } from "@/lib/hooks";
+
+// Importing icon
+import { Share } from "lucide-react";
+
+// Importing interface
 interface Group {
   id: string;
   name: string;
 }
-
-import { Share } from "lucide-react";
 
 type Props = {
   group: Group;

@@ -1,3 +1,4 @@
+// Importing components and utilities from the lib folder
 import { Balances } from "@/lib/balances";
 import { cn, formatCurrency } from "@/lib/utils";
 

@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Importing components
 import { BalancesList } from "@/components/BalancesList";
 import { ReimbursementList } from "@/components/ReimbursementList";
 import {
@@ -8,17 +9,24 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Navbar from "@/components/Navbar";
+import { GroupTabs } from "@/components/GroupTabs";
+import { ShareButton } from "@/components/ShareButton";
+
+// Importing services
 import { getGroup, getGroupExpenses } from "@/services/Service";
 import {
   getBalances,
   getPublicBalances,
   getSuggestedReimbursements,
 } from "@/lib/balances";
+
+// Importing React utilities
 import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
+
+// Importing Link component from react-router-dom
 import { Link } from "react-router-dom";
-import { GroupTabs } from "@/components/GroupTabs";
-import { ShareButton } from "@/components/ShareButton";
+
 type Group = /*unresolved*/ any;
 let name: string;
 const GroupBalancesPage: React.FC<{ params: { groupId: string } }> = ({

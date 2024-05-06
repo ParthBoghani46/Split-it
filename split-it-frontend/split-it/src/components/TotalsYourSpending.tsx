@@ -1,7 +1,13 @@
-"use client";
+// Importing services
 import { getGroup, getGroupExpenses } from "@/services/Service";
+
+// Importing custom hooks
 import { useActiveUser } from "@/lib/hooks";
+
+// Importing functions related to totals
 import { getTotalActiveUserPaidFor } from "@/lib/totals";
+
+// Importing utility function for currency formatting
 import { formatCurrency } from "@/lib/utils";
 
 type Props = {
