@@ -43,7 +43,3 @@ Access Split-It through your web browser at `http://localhost:3000` once both ba
 ## Contributing
 
 Contributions are welcome! Fork the repository and create a pull request with your changes.
-
----
-
-Give more design to your README file by adding appropriate headings, code blocks, and horizontal lines to separate sections. You can also use bullet points to make the instructions easier to follow.
